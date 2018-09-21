@@ -88,8 +88,10 @@ void main()
       break;
     }
 
+    printf("%s", buf);
+
     // Echo message back to client
-    send(clientSocket, buf, bytesReceived + 1, 0);
+    //send(clientSocket, buf, bytesReceived + 1, 0);
   }
 
   // Close the socket
